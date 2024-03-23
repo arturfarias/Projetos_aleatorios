@@ -6,7 +6,7 @@ class Events:
         pass
 
     def quit(self):
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
+        for event in pygame.event.get(): # Checa todos os eventos que acontecem
+            if event.type == pygame.QUIT: # Verdadeiro se foi o evento de fechar o jogo
+                pygame.quit() # Finaliza o jogo
+                sys.exit() # Finaliza o programa python
