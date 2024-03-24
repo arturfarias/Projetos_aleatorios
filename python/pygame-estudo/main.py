@@ -15,7 +15,7 @@ class Main:
 
     def run(self):
         while(True): # Cria o loop infinito a qual o jogo roda
-            self.events.quit() # Chama o método de evento que gerencia o fechamento do jogo
+            self.events.run() # Chama os eventos globais
             self.game.run() # Executa o conteúdo da classe Game
 
             display.flip() # Usado para atualizar a tela a todo frame
